@@ -6,5 +6,5 @@ RUN \
     # Append firefox entry to supervisord.conf
     cd /etc/supervisor/conf.d && \
     echo '[program:firefox]' >> supervisord.conf && \
-    echo 'command=bash -c \'sleep 5 && /usr/bin/firefox --no-remote\'' >> supervisord.conf && \
+    echo 'command=/usr/bin/firefox --no-remote' >> supervisord.conf && \
     echo 'autorestart=true' >> supervisord.conf
