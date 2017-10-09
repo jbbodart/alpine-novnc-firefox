@@ -1,7 +1,7 @@
 FROM uphy/novnc-alpine
 RUN \
     # Install firefox
-    apk --update --no-cache add firefox && \
+    apk --update --no-cache add dbus firefox-esr fontconfig ttf-freefont && \
     rm  -rf /tmp/* /var/cache/apk/* && \
     # Append firefox entry to supervisord.conf
     cd /etc/supervisor/conf.d && \
