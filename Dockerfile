@@ -1,4 +1,4 @@
-FROM jbbodart/novnc-alpine
+FROM jbbodart/alpine-novnc
 RUN \
     # Install firefox
     apk --update --no-cache add dbus xterm firefox-esr fontconfig ttf-freefont && \
